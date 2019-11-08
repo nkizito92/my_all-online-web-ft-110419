@@ -5,7 +5,12 @@ def my_all?(collection)
   array = []
   while i < collection.length 
    array << yield(collection[i])
-    i = 0 + 1 
+    i = i + 1 
+  end
+  if array.include?(false)
+    false
+  else 
+    true 
   end 
   array 
 end
