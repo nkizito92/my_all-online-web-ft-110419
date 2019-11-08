@@ -7,7 +7,7 @@ def my_all?(collection)
    array << yield(collection[i])
     i = i + 1 
   end 
-  collection
+  array 
 end
 
 my_all?([1,2,3]) {|i| i < 2}
