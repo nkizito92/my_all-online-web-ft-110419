@@ -12,7 +12,6 @@ def my_all?(collection)
   else 
     true 
   end 
-  array 
 end
 
 my_all?([1,2,3]) collect do {|i| i < 2}
